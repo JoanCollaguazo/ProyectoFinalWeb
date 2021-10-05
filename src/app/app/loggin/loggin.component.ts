@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+var hola;
 @Component({
   selector: 'app-loggin',
   templateUrl: './loggin.component.html',
@@ -27,5 +28,12 @@ export class LogginComponent {
     console.log(this.formLogin.value);
   }
 
+  loadApi():any {
+    
+  }
+  hola=(
+    this.formLogin.value
+  );
+  
 
 }
